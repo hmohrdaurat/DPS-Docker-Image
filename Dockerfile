@@ -5,4 +5,5 @@ RUN apt-get install curl wget git build-essential sudo cmake -y
 RUN git clone --recursive https://github.com/facebookincubator/velox.git \
     && cd velox && git submodule sync --recursive && git submodule update --init --recursive \
     && ./scripts/setup-ubuntu.sh && make
+RUN apt-get install lldb clang -y
 CMD /usr/bin/bash
