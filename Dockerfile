@@ -7,4 +7,5 @@ RUN git clone --recursive https://github.com/facebookincubator/velox.git \
     && cd /velox && git submodule sync --recursive && git submodule update --init --recursive
 RUN cd /velox && ./scripts/setup-ubuntu.sh 
 RUN cd /velox && make VELOX_BUILD_TESTING=OFF debug
+RUN apt-get install openssh-server -y
 CMD /usr/bin/bash
