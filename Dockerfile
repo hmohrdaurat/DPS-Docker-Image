@@ -8,4 +8,5 @@ RUN git clone --recursive https://github.com/facebookincubator/velox.git \
 RUN cd /velox && ./scripts/setup-ubuntu.sh 
 RUN cd /velox && make VELOX_BUILD_TESTING=OFF debug
 RUN apt-get install openssh-server -y
+RUN apt install nano emacs-nox -y
 CMD /usr/bin/bash
