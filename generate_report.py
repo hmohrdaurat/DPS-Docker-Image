@@ -12,8 +12,7 @@ def main():
     ls_cmd = "git ls-tree -r main --name-only"
     file_names = [
         "./README.md",
-        "./Source/OptimizedPlan.hpp",
-        "./Source/OptimizedPlan.cpp",
+        "./Source/ThreeWayJoin.hpp",
     ]
     dir_name = "./out"
     out_file_name = join(dir_name, "report.txt")
