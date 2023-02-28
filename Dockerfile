@@ -12,5 +12,4 @@ RUN apt install nano emacs-nox -y
 RUN apt-get install -y enscript ghostscript
 COPY build-init.sh /usr/local/bin/build-init.sh
 COPY generate_report.py /usr/local/bin/generate_report.py
-USER 55:65534
 CMD /usr/bin/bash
