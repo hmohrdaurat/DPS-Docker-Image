@@ -11,8 +11,17 @@ def main():
     """
     ls_cmd = "git ls-tree -r main --name-only"
     file_names = [
-        "./README.md",
-        "./Source/ThreeWayJoin.hpp",
+        "./Discussion.md",
+        "./Common/Utilities.hpp",
+        "./SymmetricJoinEngine/Source/SymmetricJoinEngine.cpp",
+        "./SymmetricJoinEngine/Source/SymmetricJoinEngine.hpp",
+        "./Tests/DataSources.hpp",
+        "./EagerLoaderEngine/Source/EagerLoaderEngine.cpp",
+        "./EagerLoaderEngine/Source/EagerLoaderEngine.hpp",
+        "./LazyLoaderEngine/Source/LazyLoaderEngine.cpp",
+        "./LazyLoaderEngine/Source/LazyLoaderEngine.hpp",
+        "./Tests/AdditionalTests.hpp",
+        "./Tests/TestQueries.hpp",
     ]
     dir_name = "./out"
     out_file_name = join(dir_name, "report.txt")
