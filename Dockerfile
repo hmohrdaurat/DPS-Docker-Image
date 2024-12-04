@@ -3,8 +3,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -yy && \
     apt-get upgrade -yy && \
     apt-get install -yy curl wget git build-essential sudo cmake ninja-build && \
+    apt-get install -yy lldb-14 clang-format-14 clang-tidy-14 clang-14 && \
     apt-get install -yy lldb clang-format clang-tidy clang nano emacs-nox nodejs && \
-    apt-get upgrade -yy gdb lldb valgrind && \
+    apt-get install -yy gdb valgrind && \
     apt-get install -yy libboost-all-dev && \
     apt-get install -yy uuid-dev libfmt-dev libspdlog-dev libssl-dev libcurl4-openssl-dev && \
     apt-get install -yy libevent-dev liblz4-dev libzstd-dev libbz2-dev libgflags-dev libgoogle-glog-dev libsnappy-dev && \
